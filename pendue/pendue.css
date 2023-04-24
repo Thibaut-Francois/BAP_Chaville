@@ -1,0 +1,105 @@
+body {
+    background-color: #FFF;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    color: #3868D9;
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  p {
+    color: #2B5387;
+    font-size: 1.2rem;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  #mot-a-completer {
+    font-size: 2rem;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  
+  #lettres {
+    display: flex;
+    justify-content: center;
+    margin: 1rem auto;
+  }
+  
+  #lettres button {
+    background-color: #64DBF3;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  #envoyer {
+    background-color: #EA0C0C;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  #resultat {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    text-align: center;
+  }
+
+  #en-savoir-plus{
+    display: none;
+  }
+  
+  #en-savoir-plus, #nouvelle-partie {
+    background-color: #3868D9;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  #infos {
+    color: #2B5387;
+    font-size: 1.2rem;
+    margin: 1rem auto;
+    text-align: center;
+    display: none;
+  }
+  
+  #nb-tentatives {
+    color: #2B5387;
+    font-size: 1.5rem;
+    margin: 1rem auto;
+    text-align: center;
+  }
+  
+  .button{
+    display: flex;
+    justify-content: center;
+  }
+
+  button[data-lettre] {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  button[data-lettre][style*="none"] {
+    display: none;
+  }
+  
+  
