@@ -190,184 +190,79 @@ section .title::after {
 }
 
 /* presentation section styling */
-body .testimonial .row .tabs {
-  all: unset;
-  margin-right: 50px;
+.pres-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-body .testimonial .row .tabs li {
-  all: unset;
-  display: block;
+.pres-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
+  height: 300px;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
-body .testimonial .row .tabs li.active::before {
-  position: absolute;
-  content: "";
-  width: 50px;
-  height: 50px;
-  background-color: #71b85f;
-  border-radius: 50%;
-}
-
-body .testimonial .row .tabs li.active::after {
-  position: absolute;
-  content: "";
-  width: 30px;
-  height: 30px;
-  background-color: #71b85f;
-  border-radius: 50%;
-}
-
-body .testimonial .row .tabs li:nth-child(1) {
-  align-self: flex-end;
-}
-
-body .testimonial .row .tabs li:nth-child(1)::before {
-  left: 64%;
-  bottom: -50px;
-}
-
-body .testimonial .row .tabs li:nth-child(1)::after {
-  left: 97%;
-  bottom: -81px;
-}
-
-body .testimonial .row .tabs li:nth-child(1) figure img {
+.images-container img:nth-of-type(1) {
   margin-left: auto;
 }
 
-body .testimonial .row .tabs li:nth-child(2) {
-  align-self: flex-start;
-}
-
-body .testimonial .row .tabs li:nth-child(2)::before {
-  right: -65px;
-  top: 50%;
-}
-
-body .testimonial .row .tabs li:nth-child(2)::after {
-  bottom: 101px;
-  border-radius: 50%;
-  right: -120px;
-}
-
-body .testimonial .row .tabs li:nth-child(2) figure img {
+.images-container img:nth-of-type(2) {
   margin-right: auto;
   max-width: 300px;
   width: 100%;
   margin-top: -50px;
 }
 
-body .testimonial .row .tabs li:nth-child(3) {
-  align-self: flex-end;
-}
-
-body .testimonial .row .tabs li:nth-child(3)::before {
-  right: -10px;
-  top: -66%;
-}
-
-body .testimonial .row .tabs li:nth-child(3)::after {
-  top: -130px;
-  border-radius: 50%;
-  right: -46px;
-}
-
-body .testimonial .row .tabs li:nth-child(3) figure img {
+.images-container img:nth-of-type(3) {
   margin-left: auto;
-  margin-top: -50px;
+  margin-top: -150px;
 }
 
-body .testimonial .row .tabs li:nth-child(3):focus {
-  border: 10px solid red;
+.images-container {
+  margin: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 70%;
+  height: 100%;
 }
 
-body .testimonial .row .tabs li figure {
-  position: relative;
+.image {
+  width: 30%;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
-body .testimonial .row .tabs li figure img {
+.active {
+  border: 1px solid rgb(95, 137, 83);
+}
+
+.description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.description {
+  display: none;
+}
+
+.active-description {
   display: block;
 }
 
-body .testimonial .row .tabs li figure::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  border: 4px solid #dff9d9;
-  border-radius: 50%;
-  transform: scale(1);
-  transition: 0.3s;
-}
-
-body .testimonial .row .tabs li figure:hover::after {
-  transform: scale(1.1);
-}
-
-body .testimonial .row .tabs.carousel-indicators li.active figure::after {
-  transform: scale(1.1);
-}
-
-body .testimonial .row .carousel > h3 {
-  font-size: 20px;
-  line-height: 1.45;
-  color: rgba(0, 0, 0, 0.5);
-  font-weight: 600;
-  margin-bottom: 0;
-}
-
-body .testimonial .row .carousel h1 {
-  font-size: 40px;
-  line-height: 1.225;
-  margin-top: 23px;
-  font-weight: 700;
-  margin-bottom: 0;
-}
-
-body .testimonial .row .carousel .carousel-indicators {
-  all: unset;
-  padding-top: 43px;
-  display: flex;
-  list-style: none;
-}
-
-body .testimonial .row .carousel .carousel-indicators li {
-  background: #000;
-  background-clip: padding-box;
-  height: 2px;
-}
-
-body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper {
-  margin-top: 42px;
-}
-
-body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
-  font-size: 18px;
-  line-height: 1.72222;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.7);
-}
-
-body .testimonial .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
-  color: #000;
-  font-weight: 700;
-  margin-top: 37px;
-  font-size: 20px;
-  line-height: 1.45;
-  text-transform: uppercase;
-}
-
-@media only screen and (max-width: 1200px) {
-  body .testimonial .row .tabs {
-    margin-right: 25px;
-  }
-}
 /*caroussel*/
 @keyframes slidein {
   0% {

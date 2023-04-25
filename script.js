@@ -31,33 +31,38 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["Félin", " Solitaire", "Discret"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
 });
 
-$(document).ready(function(){
-    $(".testimonial .indicators li").click(function(){
-      var i = $(this).index();
-      var targetElement = $(".testimonial .tabs li");
-      targetElement.eq(i).addClass('active');
-      targetElement.not(targetElement[i]).removeClass('active');
-              });
-              $(".testimonial .tabs li").click(function(){
-                  var targetElement = $(".testimonial .tabs li");
-                  targetElement.addClass('active');
-                  targetElement.not($(this)).removeClass('active');
-              });
-          });
-  $(document).ready(function(){
-      $(".slider .swiper-pagination span").each(function(i){
-          $(this).text(i+1).prepend("0");
-      });
-  });
+const images = document.querySelectorAll(".image");
+const descriptions = document.querySelectorAll(".description");
 
-  
+// Masquer toutes les descriptions sauf la première
+descriptions.forEach((description, index) => {
+  if (index !== 0) {
+    description.style.display = "none";
+  } else {
+    description.classList.add("active-description");
+  }
+});
+
+// Ajout d'un gestionnaire d'événements pour chaque image
+images.forEach((image, index) => {
+  image.addEventListener("click", () => {
+    // Suppression de la classe active sur toutes les images
+    images.forEach((image) => image.classList.remove("active"));
+
+    // Ajout de la classe active à l'image sélectionnée
+    image.classList.add("active");
+
+    // Masquer toutes les descriptions sauf celle correspondante à l'image sélectionnée
+    descriptions.forEach((description, index) => {
+      if (index === Array.from(images).indexOf(image)) {
+        description.style.display = "block";
+        description.classList.add("active-description");
+      } else {
+        description.style.display = "none";
+        description.classList.remove("active-description");
+      }
+    });
+  });
+});
