@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-ul {
-  list-style-type: none;
-}
-
 a,
 a:hover {
   text-decoration: none;
@@ -20,7 +16,6 @@ html {
 }
 
 body {
-  line-height: 23px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -63,8 +58,8 @@ body {
 }
 
 .navbar .logo a img {
-  width: 10%;
-  height: 10%;
+  width: 30px;
+  height: 30px;
 }
 
 .navbar .logo a span {
@@ -192,10 +187,6 @@ section .title::after {
 }
 
 /* presentation section styling */
-body .testimonial {
-  padding: 100px 0;
-}
-
 body .testimonial .row .tabs {
   all: unset;
   margin-right: 50px;

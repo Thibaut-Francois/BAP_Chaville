@@ -5,21 +5,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-ul {
-    list-style-type: none;
-  }
-  
   a,
   a:hover {
     text-decoration: none;
   }
-  
 html{
     scroll-behavior: smooth;
 }
 body{
-    line-height: 23px;
     font-family: "Montserrat", sans-serif;
 }
 /* custom scroll bar */
@@ -54,8 +47,8 @@ body{
     justify-content: space-between;
 }
 .navbar .logo a img{
-    width: 10%;
-    height: 10%;
+    width: 30px;
+    height: 30px;
 }
 .navbar .logo a span{
     color: rgb(78, 86, 57);;
@@ -166,9 +159,6 @@ section .title::after{
 }
 /* presentation section styling */
 
-body .testimonial {
-  padding: 100px 0;
-}
 body .testimonial .row .tabs {
   all: unset;
   margin-right: 50px;
@@ -336,7 +326,6 @@ $sections: strawberry, banana, apple, orange;
 
 $colors: (
   strawberry: #D64541,
-  melon:#7cc598,
   banana: #F5D76E,
   apple: #00B16A,
   orange: #F27935,
@@ -349,7 +338,6 @@ $pictograms: (
   banana: url('https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png'),
   apple: url('https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png'),
   orange: url('https://api.iconify.design/mdi/hammer-screwdriver.svg'),
-  melon: url('https://api.iconify.design/guidance/waste.svg'),
 );
 
 @function get-color($color-name) {
