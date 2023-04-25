@@ -7,25 +7,106 @@ let QR = [
         "i":'NE PAS MODIFIER CETTE CHAINE DE TEXTE !"'
     },
     {
-        "q":"le ciel est de couleur ?",
-        "r":"bleu",
-        "i":'ça commence par "bl" et finit par "eu"'
+        "q":"Je suis un mode de vie qui consiste à consommer de manière responsable et à limiter ses achats à l'essentiel. Qui suis-je ?",
+        "r":"minimalisme",
+        "i":'mon nom ressemble au mon minimum'
     },
     {
-        "q":"l'herbe est de couleur ?",
-        "r":"verte",
-        "i":'ça commence par "ve" et finit par "rte"'
+        "q":"Je suis un modèle économique qui vise à réduire les déchets et à favoriser le recyclage en bouclant les cycles de production et de consommation. Qui suis-je ?",
+        "r":"L'économie circulaire",
+        "i":'Recyclage'
     },
-    // {
-    //     "q":"le soleil est de couleur ?",
-    //     "r":"jaune",
-    //     "i":'ça commence par "ja" et finit par "une"'
-    // },
-    // {
-    //     "q":"les tomates sont de couleur ?",
-    //     "r":"rouge",
-    //     "i":'ça commence par "rou" et finit par "ge"'
-    // },
+    {
+        "q":"Je suis un type de déchet qui peut être transformé en compost pour nourrir la terre. Qui suis-je ?",
+        "r":"déchets organiques",
+        "i":'Décomposition'
+    },
+    {
+        "q":"Je suis une mesure de l'impact environnemental d'un individu, d'une entreprise ou d'une société. Qui suis-je ?",
+        "r":"empreinte écologique",
+        "i":'Mesure'
+    },
+    {
+        "q":"Je suis un type de déchet qui peut être réutilisé pour créer de nouveaux produits. Qui suis-je ?",
+        "r":"déchets recyclables",
+        "i":'Recyclage'
+    },
+    {
+        "q":"Je suis un phénomène qui contribue à la perte de la biodiversité et à la destruction de l'habitat des espèces animales. Qui suis-je ?",
+        "r":"déforestation",
+        "i":'je me fais principalement par la destruction de plante'
+    },
+    {
+        "q":"Je suis un comportement qui consiste à gaspiller de l'électricité et de l'énergie en général. Qui suis-je ? ",
+        "r":"gaspillage énergétique",
+        "i":'Gaspillage'
+    },
+    {
+        "q":"Je suis un type de déchet qui peut prendre des centaines d'années à se décomposer dans la nature. Qui suis-je ?",
+        "r":"déchets plastiques",
+        "i":'Durée'
+    },
+    {
+        "q":"Je suis une pratique qui consiste à jeter de la nourriture consommable. Qui suis-je ?",
+        "r":"gaspillage alimentaire",
+        "i":'Alimentation'
+    },
+    {
+        "q":"Je suis un mode de vie qui consiste à acheter des produits de manière éthique, en prenant en compte les impacts sociaux et environnementaux. Qui suis-je ? ",
+        "r":"consommation responsable",
+        "i":'Responsable'
+    },
+    {
+        "q":"Je suis un comportement qui consiste à éteindre les appareils électroniques et les lumières inutiles pour éviter le gaspillage d'énergie. Qui suis-je ?",
+        "r":"extinction",
+        "i":'Électricité'
+    },
+    {
+        "q":"Je suis un modèle agricole qui vise à produire des aliments sans utiliser de produits chimiques ou de pesticides. Qui suis-je ?",
+        "r":"agriculture biologique",
+        "i":'sans pestcide chimiques'
+    },
+    {
+        "q":"Je suis un mode de transport qui ne produit pas d'émissions de gaz à effet de serre. Qui suis-je ?",
+        "r":"vélo",
+        "i":'à 2 roues et autant de pédales'
+    },
+
+    {
+        "q":"Je suis un type de déchet qui peut être composté pour produire de l'engrais naturel. Qui suis-je ?",
+        "r":"déchets de jardin",
+        "i":'Jardinage'
+    },
+    {
+        "q":"Je suis une pratique qui consiste à acheter des produits d'occasion plutôt que neufs pour éviter la surconsommation. Qui suis-je ?",
+        "r":"recyclage",
+        "i":'Réutilisation'
+    },
+    {
+        "q":"Je suis un comportement qui consiste à utiliser l'eau de manière responsable pour éviter le gaspillage. Qui suis-je ?",
+        "r":"économie d'eau",
+        "i":'Économie'
+    },
+    {
+        "q":"Je suis une pratique qui consiste à réduire la quantité de déchets produits en utilisant des produits durables et réutilisables. Qui suis-je ?",
+        "r":"réduction des déchets",
+        "i":'Réduction'
+    },
+    {
+        "q":"Je suis un type de déchet qui peut être transformé en biogaz pour produire de l'énergie. Qui suis-je ?",
+        "r":"déchets organiques",
+        "i":'Biomasse'
+    },
+    {
+        "q":"Je suis une pratique qui consiste à utiliser les transports en commun pour réduire les émissions de gaz à effet de serre. Qui suis-je ?",
+        "r":"transports en commun",
+        "i":'Collectif'
+    },
+    {
+        "q":"Je suis un modèle de production qui vise à minimiser la consommation de ressources naturelles et l'émission de déchets. Qui suis-je ?",
+        "r":"production durable",
+        "i":'Durabilité'
+    },
 ]
 console.log(QR.length)
 
