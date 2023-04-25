@@ -1,0 +1,49 @@
+main {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .diapo {
+    position: relative;
+    overflow: hidden;
+    height: 30rem; /* hauteur de la div diapo */
+  }
+  
+  .elements {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(-10%);
+    height: 100%; /* hauteur des éléments */
+  }
+  
+  .element {
+    flex: 1 0 80%;
+    position: relative;
+    margin: 0 5%;
+    height: 100%; /* hauteur des éléments */
+  }
+  
+  .element > img {
+    max-height: 100%; /* taille maximale des images */
+    object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1;
+    margin-top: 2.5%;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    z-index: 2;
+  }
+  
