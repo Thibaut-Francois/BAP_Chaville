@@ -25,7 +25,9 @@ body {
   
   #lettres {
     display: flex;
-    justify-content: center;
+    justify-content: center;;
+    flex-wrap: wrap;
+    max-width: 100%;
     margin: 1rem auto;
   }
   
@@ -36,7 +38,7 @@ body {
     color: #FFF;
     cursor: pointer;
     font-size: 1.5rem;
-    margin: 0 0.5rem;
+    margin: 0.5rem;
     padding: 0.5rem;
   }
   
