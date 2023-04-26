@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 45%;
+    height: 50vh;
+    background-color: aqua;
+    margin-top: 25vh;
+}
+
+h1{
+    text-align: center;
+    margin: 25px auto;
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 15px auto;
+    width: 30%;
+    height: 5vh;
+    border-radius: 20px;
+    border-style: hidden;
+}
+
+p{
+    margin: 0 auto;
+    width: 80%;
+}
+
+span{
+    text-align: center;
+}
+
+button{
+    padding: 3px 5px;
+    width: 20%;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    border-style: hidden;
+    box-shadow: 5px 4px 3px rgb(35, 35, 35);
+}
+
+button:hover{
+    box-shadow: 3px 2px 3px rgb(35, 35, 35);
+}
