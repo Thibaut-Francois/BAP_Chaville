@@ -59,8 +59,8 @@ body {
 }
 
 .navbar .logo a img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: auto;
 }
 
 .navbar .logo a span {
@@ -136,7 +136,7 @@ body {
 /* all similar content styling codes */
 section {
   padding: 100px 0;
-  height: 100vh;
+  height: 100%;
 }
 
 .max-width {
@@ -198,19 +198,8 @@ section .title::after {
   width: 100%;
 }
 
-.pres-images {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  height: 300px;
-  width: 80%;
-  margin-bottom: 20px;
-}
-
 .images-container img:nth-of-type(1) {
   margin-left: auto;
-  width: 20%;
 }
 
 .images-container img:nth-of-type(2) {
@@ -222,7 +211,17 @@ section .title::after {
 
 .images-container img:nth-of-type(3) {
   margin-left: auto;
-  margin-top: -150px;
+  margin-top: -50px;
+}
+
+.pres-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 300px;
+  width: 80%;
+  margin-bottom: 20px;
 }
 
 .images-container {
@@ -233,31 +232,28 @@ section .title::after {
   align-items: center;
   width: 70%;
   height: 100%;
+  margin-top: 10%;
 }
-
-.image {
+.images-container img {
   width: 30%;
   margin-right: 10px;
   cursor: pointer;
-  border: 15px groove #2aa83d;
-  border-radius: 50%;
-  padding: 2px;
-  background: #fff;
+  filter: blur(5px);
+}
+.images-container img:hover {
+  border: 10px white solid;
+  outline: 5px #95C777 solid;
+  border-radius: 100%;
+  transform: scale(1.1);
+  filter: blur(0px);
 }
 
-.image:hover {
-  width: 30%;
-  margin-right: 10px;
-  cursor: pointer;
-  border: 15px groove #2aa83d;
-  border-radius: 50%;
-  padding: 10px;
-  background: #fff;
-  transition: all 0.4s smooth;
-}
-
-.active {
-  border: 2px solid #2aa83d;
+.bordure {
+  border: 10px white solid;
+  outline: 5px #95C777 solid;
+  border-radius: 100%;
+  transform: scale(1.1);
+  filter: blur(0px);
 }
 
 .description-container {
@@ -268,7 +264,6 @@ section .title::after {
   width: 40%;
   height: 100%;
   padding-left: 20px;
-  box-sizing: border-box;
 }
 
 .description {
@@ -428,7 +423,7 @@ section .title::after {
   background-repeat: no-repeat;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_strawberry h1 {
-  color: #D64541;
+  color: #2B5A35;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana .picto {
   height: 100px;
@@ -439,7 +434,7 @@ section .title::after {
   background-repeat: no-repeat;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_banana h1 {
-  color: #F5D76E;
+  color: #7BB955;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple .picto {
   height: 100px;
@@ -450,7 +445,7 @@ section .title::after {
   background-repeat: no-repeat;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
-  color: #00B16A;
+  color: #387B47;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange .picto {
   height: 100px;
@@ -461,7 +456,7 @@ section .title::after {
   background-repeat: no-repeat;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
-  color: #F27935;
+  color: #5F8D3A;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
   text-transform: uppercase;
@@ -475,20 +470,20 @@ section .title::after {
   animation: all 1s cubic-bezier(0.455, 0.03, 0.515, 0.955);
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_strawberry {
-  color: #D64541;
-  border-right: solid 4px #D64541;
+  color: #2B5A35;
+  border-right: solid 4px #2B5A35;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_banana {
-  color: #F5D76E;
-  border-right: solid 4px #F5D76E;
+  color: #7BB955;
+  border-right: solid 4px #7BB955;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_apple {
-  color: #00B16A;
-  border-right: solid 4px #00B16A;
+  color: #387B47;
+  border-right: solid 4px #387B47;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
-  color: #F27935;
-  border-right: solid 4px #F27935;
+  color: #5F8D3A;
+  border-right: solid 4px #5F8D3A;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
   animation-duration: 0.75s;
