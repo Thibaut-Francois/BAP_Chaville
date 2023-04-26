@@ -449,7 +449,7 @@ section .title::after {
   background-size: 75% 75%;
   background-repeat: no-repeat;
 }
-#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ label.label_orange:before {
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ label.label_range:before {
   content: " ";
   display: block;
   position: absolute;
@@ -520,7 +520,7 @@ section .title::after {
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple h1 {
   color: #387B47;
 }
-#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange .picto {
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_range .picto {
   height: 100px;
   width: 100px;
   background-image: url("https://api.iconify.design/mdi/hammer-screwdriver.svg");
@@ -528,7 +528,7 @@ section .title::after {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_range h1 {
   color: #5F8D3A;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_melon .picto {
@@ -565,7 +565,7 @@ section .title::after {
   color: #387B47;
   border-right: solid 4px #387B47;
 }
-#caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_range {
   color: #5F8D3A;
   border-right: solid 4px #5F8D3A;
 }
@@ -694,7 +694,7 @@ section .title::after {
   width: 100%;
   height: 100%;
   border: 2px solid #449556;
-  background: #95C777;
+  background: #449556;
   color: #fff;
   outline: none;
   font-size: 20px;

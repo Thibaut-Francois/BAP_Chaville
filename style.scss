@@ -296,14 +296,13 @@ $menu-width: 350px;
 $scene-width: 1000px;
 $scene-height: 400px;
 
-$sections: strawberry, banana, apple, orange, melon;
-
+$sections: strawberry, banana, apple, range, melon;
 $colors: (
   strawberry: #2B5A35,
   banana: #7BB955,
   apple: #387B47,
   melon:#023e0f,
-  orange: #5F8D3A,
+  range: #5F8D3A,
   white: #fff,
   gray: #eee
 );
@@ -311,7 +310,7 @@ $pictograms: (
   strawberry: url('https://api.iconify.design/guidance/waste.svg'),
   banana: url('https://api.iconify.design/fa/recycle.svg'),
   apple: url('https://api.iconify.design/ic/twotone-diversity-2.svg'),
-  orange: url('https://api.iconify.design/mdi/hammer-screwdriver.svg'),
+  range: url('https://api.iconify.design/mdi/hammer-screwdriver.svg'),
   melon: url('https://api.iconify.design/icons8/numerical-sorting-12.svg'),
 );
 
@@ -505,8 +504,7 @@ $pictograms: (
           }
         }
       }
-    }
-    
+    }  
     #middle-border {
       background-color: get-color(gray);
       height: 75%;
@@ -605,7 +603,7 @@ $pictograms: (
     width: 100%;
     height: 100%;
     border: 2px solid #449556;
-    background: #95C777;
+    background: #449556;
     color: #fff;
     outline: none;
     font-size: 20px;
