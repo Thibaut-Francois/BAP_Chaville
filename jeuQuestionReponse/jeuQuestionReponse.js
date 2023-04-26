@@ -9,7 +9,7 @@ let QR = [
     {
         "q":"Je suis un mode de vie qui consiste à consommer de manière responsable et à limiter ses achats à l'essentiel. Qui suis-je ?",
         "r":"minimalisme",
-        "i":'mon nom ressemble au mon minimum'
+        "i":'mon nom ressemble au mot "minimum"'
     },
     {
         "q":"Je suis un modèle économique qui vise à réduire les déchets et à favoriser le recyclage en bouclant les cycles de production et de consommation. Qui suis-je ?",
@@ -139,7 +139,7 @@ document.querySelector('#btnS').addEventListener("click", ()=>{
 
 
     }else{
-        document.querySelector('#btnS').innerHTML = "suivant"
+        document.querySelector('#btnS').innerHTML = "SUIVANT"
         document.querySelector('#btnS').style.display = "none"
         document.querySelector('#rep').value=""
         document.querySelector('#que').innerHTML = QR[i].q
