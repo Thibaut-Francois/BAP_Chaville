@@ -180,6 +180,7 @@ section .title::after{
 }
 .images-container img:nth-of-type(1){
   margin-left: auto;
+  width: 20%;
 }
 .images-container img:nth-of-type(2){
   margin-right: auto;
@@ -204,9 +205,23 @@ section .title::after{
   width: 30%;
   margin-right: 10px;
   cursor: pointer;
+  border:15px groove #2aa83d;
+  border-radius: 50%;
+  padding: 2px;
+  background: #fff;
+} 
+.image:hover{
+  width: 30%;
+  margin-right: 10px;
+  cursor: pointer;
+  border:15px groove #2aa83d;
+  border-radius: 50%;
+  padding: 10px;
+  background: #fff;
+  transition: all 0.4s smooth;
 } 
 .active {
-  border: 1px solid rgb(95, 137, 83);
+  border: 2px solid #2aa83d;
 }
 .description-container {
   display: flex;
@@ -242,7 +257,7 @@ $colors: (
 
 $pictograms: (
   strawberry: url('https://api.iconify.design/guidance/waste.svg'),
-  banana: url('https://d30y9cdsu7xlg0.cloudfront.net/png/53209-200.png'),
+  banana: url('https://api.iconify.design/fa/recycle.svg'),
   apple: url('https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png'),
   orange: url('https://api.iconify.design/mdi/hammer-screwdriver.svg'),
 );
@@ -484,7 +499,7 @@ $pictograms: (
 }
 .newsletter .newsletter-content .row i{
     font-size: 25px;
-    color: rgb(78, 86, 57);
+    color: #449556;
 }
 .newsletter .newsletter-content .info .head{
     font-weight: 500;
@@ -538,8 +553,8 @@ $pictograms: (
 .newsletter .right form .button button{
     width: 100%;
     height: 100%;
-    border: 2px solid rgb(78, 86, 57);;
-    background: rgb(78, 86, 57);;
+    border: 2px solid #449556;
+    background: #95C777;
     color: #fff;
     outline: none;
     font-size: 20px;
@@ -549,7 +564,7 @@ $pictograms: (
     transition: all 0.3s ease;
 }
 .newsletter .right form .button button:hover{
-    color: rgb(78, 86, 57);
+    color: #449556;
     background: none;
 }
 
