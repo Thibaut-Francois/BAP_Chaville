@@ -35,7 +35,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #449556;
+  background: #a4edb4;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -374,12 +374,12 @@ section .title::after {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: "This color key doesn't exist.";
+  background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   overflow: hidden;
 }
 #caroussel-jeux #scene #left-zone {
-  background: "This color key doesn't exist.";
+  background: #fff;
   height: 75%;
   flex-grow: 0;
   display: flex;
@@ -444,7 +444,7 @@ section .title::after {
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("https://api.iconify.design/guidance/waste.svg");
+  background-image: url("https://api.iconify.design/ic/twotone-diversity-2.svg");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -512,7 +512,7 @@ section .title::after {
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://api.iconify.design/guidance/waste.svg");
+  background-image: url("https://api.iconify.design/ic/twotone-diversity-2.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
