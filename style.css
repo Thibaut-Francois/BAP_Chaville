@@ -7,9 +7,13 @@
   box-sizing: border-box;
 }
 
-a,
-a:hover {
+.logo a {
   color: #fff;
+  text-decoration: none;
+}
+
+a {
+  color: #000000;
   text-decoration: none;
 }
 
@@ -27,15 +31,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: rgb(134, 146, 104);
+  background: #449556;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(78, 86, 57);
+  background: #449556;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #8cbf97;
 }
 
 /* tuto-caroussel*/
@@ -72,7 +76,8 @@ body {
 
 .element > img {
   max-height: 90%; /* taille maximale des images */
-  object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
+  -o-object-fit: contain;
+     object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
   position: relative;
   left: 0;
   right: 0;
@@ -162,7 +167,7 @@ body {
   position: fixed;
   height: 45px;
   width: 42px;
-  background: #449556;
+  background: #469757;
   right: 30px;
   bottom: 10px;
   text-align: center;
@@ -251,6 +256,7 @@ section .title::after {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 0;
 }
 
 .images-container img:nth-of-type(1) {
@@ -354,7 +360,6 @@ section .title::after {
   font-family: "Tahoma";
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 #caroussel-jeux #scene {
@@ -369,12 +374,12 @@ section .title::after {
   left: 0;
   right: 0;
   margin: auto;
-  background-color: #fff;
+  background-color: "This color key doesn't exist.";
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   overflow: hidden;
 }
 #caroussel-jeux #scene #left-zone {
-  background: #fff;
+  background: "This color key doesn't exist.";
   height: 75%;
   flex-grow: 0;
   display: flex;
@@ -439,7 +444,7 @@ section .title::after {
   width: 50px;
   height: 50px;
   margin-left: 15px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
+  background-image: url("https://api.iconify.design/guidance/waste.svg");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -452,6 +457,18 @@ section .title::after {
   height: 50px;
   margin-left: 15px;
   background-image: url("https://api.iconify.design/mdi/hammer-screwdriver.svg");
+  background-position: center;
+  background-size: 75% 75%;
+  background-repeat: no-repeat;
+}
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ label.label_melon:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin-left: 15px;
+  background-image: url("https://api.iconify.design/icons8/numerical-sorting-12.svg");
   background-position: center;
   background-size: 75% 75%;
   background-repeat: no-repeat;
@@ -495,7 +512,7 @@ section .title::after {
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_apple .picto {
   height: 100px;
   width: 100px;
-  background-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/14333-200.png");
+  background-image: url("https://api.iconify.design/guidance/waste.svg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -513,6 +530,17 @@ section .title::after {
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_orange h1 {
   color: #5F8D3A;
+}
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_melon .picto {
+  height: 100px;
+  width: 100px;
+  background-image: url("https://api.iconify.design/icons8/numerical-sorting-12.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content.content_melon h1 {
+  color: #023e0f;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] ~ .content h1:first-letter {
   text-transform: uppercase;
@@ -540,6 +568,10 @@ section .title::after {
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_orange {
   color: #5F8D3A;
   border-right: solid 4px #5F8D3A;
+}
+#caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ label.label_melon {
+  color: #023e0f;
+  border-right: solid 4px #023e0f;
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio]:checked ~ .content {
   animation-duration: 0.75s;
@@ -690,4 +722,17 @@ section .title::after {
   height: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+footer {
+  position: relative;
+  color: rgb(255, 255, 255);
+  background: rgb(93, 207, 124);
+}
+footer .footer-container {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=style.css.map */

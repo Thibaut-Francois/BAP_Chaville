@@ -103,15 +103,12 @@ window.onload = () => {
 
   // On centre l'image horizontalement
   elements.style.transform = `translateX(-${elements.firstElementChild.getBoundingClientRect().width / 35}px)`;
-
   // On automatise le défilement
   startAnimation();
-
   // On gère l'arrêt et la reprise
   diapo.addEventListener("mouseover", stopAnimation);
   diapo.addEventListener("mouseout", startAnimation);
 };
-
 /**
  * Cette fonction fait défiler le diaporama vers le bas
  */
@@ -130,7 +127,6 @@ function slideNext() {
     elements.style.transform = `translateY(0)`;
   }
 }
-
 /**
  * Cette fonction fait défiler le diaporama vers le haut
  */
@@ -149,12 +145,10 @@ function slidePrev() {
     elements.style.transform = `translateY(${decal}px)`;
   }
 }
-
 function startAnimation() {
   stopAnimation(); // On s'assure d'arrêter l'animation précédente avant de démarrer une nouvelle
   animationId = setInterval(slideNext, speed);
 }
-
 function stopAnimation() {
   clearInterval(animationId);
 }
