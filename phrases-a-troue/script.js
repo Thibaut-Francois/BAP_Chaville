@@ -41,7 +41,6 @@ dropzones.forEach(dropzone => {
             dropzone.innerHTML = 'Mauvaise réponse';
             dropzone.classList.add('incorrect');
             dropzone.style.backgroundColor = 'red';
-            score.innerHTML = parseInt(score.innerHTML) - 1;
             score
 
 

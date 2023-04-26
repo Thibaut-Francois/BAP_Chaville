@@ -17,12 +17,14 @@
   width: 236px;
   height: 386px;
   background: #FFFFFF;
+  border: #00B16A 1px solid;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 17px;
   align-items: center;
 }
 
 .questions {
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
   height: 100vh;
@@ -57,14 +59,18 @@
 }
 
 .draggable {
+  border: #00B16A 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
+  font-size: 13px;
   background: #D9D9D9;
+  color: #2B5A35;
   box-shadow: inset 0px 1px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   height: 35px;
   margin: 4px;
   cursor: grab;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
