@@ -207,12 +207,11 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.tuto-video, .presentation, .teams, .newsletter, footer{
+.tuto-video, .presentation, .newsletter, footer{
     font-family: 'Poppins', sans-serif;
 }
 .newsletter .newsletter-content{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
