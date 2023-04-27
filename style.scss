@@ -256,17 +256,23 @@ section .title::after{
 
 }
 .images-container img:nth-of-type(1){
-  margin-left: auto;
+  border-radius: 50%;
+  height: 140px;
+  margin-left: 60%;
 }
 .images-container img:nth-of-type(2){
   margin-right: auto;
+  border-radius: 50%;
+  height: 300px;
   max-width: 300px;
   width: 100%;
   margin-top: -50px;
 }
 .images-container img:nth-of-type(3){
-  margin-left: auto;
-  margin-top: -50px;
+  margin-top: -100px;
+  border-radius: 50%;
+  height: 140px;
+  margin-left: 55%;
 }
 .pres-images {
   display: flex;
