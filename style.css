@@ -144,6 +144,9 @@ body button:hover a {
   padding: 15px 0;
   background: #449556;
 }
+.navbar.sticky ul li a {
+  color: #fff;
+}
 
 .navbar .max-width {
   display: flex;
@@ -173,15 +176,11 @@ body button:hover a {
 
 .navbar .menu li a {
   display: block;
-  color: #fff;
+  color: #469757;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
-}
-
-.navbar .menu li a:hover {
-  color: #449556;
 }
 
 .navbar.sticky .menu li a:hover {
