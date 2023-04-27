@@ -1,6 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
+
 *{
     margin: 0;
     padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+body{
+    background-color: #bef19e;
 }
 
 section{
@@ -8,14 +16,16 @@ section{
     flex-direction: column;
     margin: 0 auto;
     width: 45%;
-    height: 50vh;
-    background-color: aqua;
+    height: 55vh;
+    background-color: #7BB955;
     margin-top: 25vh;
+    border-radius: 2px;
 }
 
-h1{
+h2{
     text-align: center;
     margin: 25px auto;
+    font-weight: 700;
 }
 
 input{
@@ -29,9 +39,12 @@ input{
     border-style: hidden;
 }
 
+input:focus { outline: 0; }
+
 p{
     margin: 0 auto;
     width: 80%;
+    text-align: center;
 }
 
 span{
@@ -51,3 +64,34 @@ button{
 button:hover{
     box-shadow: 3px 2px 3px rgb(35, 35, 35);
 }
+
+button:active {
+    background-color: #387B47;
+    color: white;
+}
+
+#corr{
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media (max-width: 650px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 85%;
+        height: 60vh;
+        margin-top: 25vh;
+    }
+
+    input{
+        width: 80%;
+        height: 5vh;
+    }
+
+    button{
+        padding: 4px 6px;
+        width: auto;
+    }
+  }

@@ -6,7 +6,6 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
-        
         //   =======scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
@@ -32,7 +31,6 @@ $(document).ready(function(){
       $('.menu-btn i').toggleClass("active");
   });
 });
-
 const images = document.querySelectorAll(".image");
 const descriptions = document.querySelectorAll(".description");
 
@@ -44,7 +42,6 @@ descriptions.forEach((description, index) => {
     description.classList.add("active-description");
   }
 });
-
 // Ajout d'un gestionnaire d'événements pour chaque image
 images.forEach((image, index) => {
   image.addEventListener("click", () => {
@@ -151,3 +148,12 @@ function startAnimation() {
 function stopAnimation() {
   clearInterval(animationId);
 }
+
+(function () {
+	let currentYear = (new Date).getFullYear();
+	let copyYear = document.querySelectorAll('.year');
+	
+	for (let i = 0; i < copyYear.length; i++) {
+		copyYear[i].textContent = currentYear;
+	}
+}());
