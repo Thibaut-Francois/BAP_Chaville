@@ -18,8 +18,11 @@ body {
   }
 
   .general{
-    margin: 5rem 30rem 0rem 30rem;
+    margin: 5rem auto 0;
+    max-width: 800px;
+    width: 90%;
   }
+  
   
   #mot-a-completer {
     font-size: 2rem;
@@ -68,7 +71,7 @@ body {
   }
   
   #en-savoir-plus, #nouvelle-partie {
-    background-color: #5c8966;
+    background-color:   #5c8966;
     border: none;
     border-radius: 5px;
     color: #FFF;
