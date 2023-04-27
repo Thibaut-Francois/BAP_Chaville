@@ -6,7 +6,6 @@ $(document).ready(function(){
         }else{
             $('.navbar').removeClass("sticky");
         }
-        
         //   =======scroll-up button show/hide script
         if(this.scrollY > 500){
             $('.scroll-up-btn').addClass("show");
@@ -151,3 +150,12 @@ function startAnimation() {
 function stopAnimation() {
   clearInterval(animationId);
 }
+
+(function () {
+	let currentYear = (new Date).getFullYear();
+	let copyYear = document.querySelectorAll('.year');
+	
+	for (let i = 0; i < copyYear.length; i++) {
+		copyYear[i].textContent = currentYear;
+	}
+}());
