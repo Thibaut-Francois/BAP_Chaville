@@ -71,11 +71,4 @@ p{
     text-decoration: none;
     cursor: pointer;
 }
-button{
-    background-color: #449556;
-    border-radius: 8px;
-    cursor: pointer;
-    color: #fefefe;
-    border: solid #449556;
-    margin-top: 20px;
-}
+
