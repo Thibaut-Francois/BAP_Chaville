@@ -109,8 +109,7 @@ body button:hover a {
 
 .element > img {
   max-height: 90%; /* taille maximale des images */
-  -o-object-fit: contain;
-     object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
+  object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
   position: relative;
   left: 0;
   right: 0;
@@ -416,6 +415,7 @@ section .title::after {
   font-family: "Tahoma";
   -moz-user-select: none;
   -webkit-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 #caroussel-jeux #scene {
@@ -873,7 +873,7 @@ footer .footer-container {
     flex-direction: column;
   }
   .newsletter .right form .name,
-  .newsleter .right form .email {
+.newsleter .right form .email {
     margin: 0;
   }
   .scroll-up-btn {
@@ -884,4 +884,6 @@ footer .footer-container {
     font-size: 23px;
     line-height: 38px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
