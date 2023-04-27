@@ -376,6 +376,20 @@ section .title::after {
 .active-description {
   display: block;
 }
+.active-description h3 {
+  font-size: 22px;
+  line-height: 1.75;
+  color: #95C777;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+.active-description p {
+  font-size: 18px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.72222;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+}
 
 /*caroussel*/
 @keyframes slidein {
