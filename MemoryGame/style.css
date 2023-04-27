@@ -27,6 +27,7 @@ img{
     width: 100%;
     border: solid #449556;
     border-radius: 10px;
+    cursor: pointer;
 }
 span {
     height: 100%;
