@@ -66,13 +66,12 @@ images.forEach((image, index) => {
     });
   });
 });
-
 images.forEach(image => {
   image.addEventListener('click', () => {
     // Parcourt chaque image et enlève la classe "bordure"
     images.forEach(otherImage => {
       otherImage.classList.remove('bordure');
-      otherImage.style.filter = 'blur(10px)';
+      otherImage.style.filter = 'blur(2px)';
     });
     // Ajoute la classe "bordure" à l'élément cliqué
     image.classList.add('bordure');

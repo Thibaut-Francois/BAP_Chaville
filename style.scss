@@ -18,19 +18,41 @@ html{
 }
 body{
     font-family: "Montserrat", sans-serif;
+    button{
+      height: 47px;
+      width: 85px;
+      border: 2px solid #449556;
+      background: #449556;
+      outline: none;
+      font-size: 20px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      a{
+        color: #fff;
+      }
+  }
+  button:hover{
+    color: #449556;
+    background: none;
+    a{
+      color: #449556;
+    }
+}
 }
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #449556;
-}
-::-webkit-scrollbar-thumb {
     background: #a4edb4;
 }
+::-webkit-scrollbar-thumb {
+    background: #449556;
+}
 ::-webkit-scrollbar-thumb:hover {
-    background: #8cbf97;
+    background: #1e241f;
 }
 /* tuto-caroussel*/
 .tuto-video{
@@ -181,10 +203,9 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .teams, .newsletter, footer{
+.tuto-video, .presentation, .teams, .newsletter, footer{
     font-family: 'Poppins', sans-serif;
 }
-.about .about-content,
 .newsletter .newsletter-content{
     display: flex;
     flex-wrap: wrap;
@@ -224,11 +245,10 @@ section .title::after{
 
 .pres-container {
   display: flex;
-
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-top: 0;
+  width: 80%;
+  margin-top: -20px;
 
 }
 .images-container img:nth-of-type(1){
@@ -247,11 +267,11 @@ section .title::after{
 .pres-images {
   display: flex;
   justify-content: center;
+  margin-left: 10vh;
   align-items: center;
   position: relative;
-  height: 100vh;
-  width: 90%; 
-  margin-bottom: 20px;
+  height: 80vh;
+  width: 80%; 
   @media screen and (max-width: 768px) {
     flex-direction: column;
     margin-top: 0;
@@ -265,13 +285,11 @@ section .title::after{
   align-items: center;
   width: 70%;
   height: 100%;
-  margin-top: 10%;
-
   img {
-   width: 30%;
+   width: 25%;
    margin-right: 10px;
    cursor: pointer;
-   filter: blur(5px);
+   filter: blur(0px);
   } 
   
   img:hover {
@@ -280,7 +298,8 @@ section .title::after{
     outline: 5px #95C777 solid;
     border-radius: 100%;
     transform: scale(1.1);
-    filter: blur(0px);
+    transition: ease-in;
+    filter: blur(2px);
   }
 }
 .bordure {

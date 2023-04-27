@@ -24,6 +24,28 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
+body button {
+  height: 47px;
+  width: 85px;
+  border: 2px solid #449556;
+  background: #449556;
+  outline: none;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body button a {
+  color: #fff;
+}
+body button:hover {
+  color: #449556;
+  background: none;
+}
+body button:hover a {
+  color: #449556;
+}
 
 /* custom scroll bar */
 ::-webkit-scrollbar {
@@ -31,15 +53,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #449556;
-}
-
-::-webkit-scrollbar-thumb {
   background: #a4edb4;
 }
 
+::-webkit-scrollbar-thumb {
+  background: #449556;
+}
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #8cbf97;
+  background: #1e241f;
 }
 
 /* tuto-caroussel*/
@@ -87,7 +109,8 @@ body {
 
 .element > img {
   max-height: 90%; /* taille maximale des images */
-  object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
+  -o-object-fit: contain;
+     object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
   position: relative;
   left: 0;
   right: 0;
@@ -215,11 +238,10 @@ section {
   margin: auto;
 }
 
-.about, .services, .teams, .newsletter, footer {
+.tuto-video, .presentation, .teams, .newsletter, footer {
   font-family: "Poppins", sans-serif;
 }
 
-.about .about-content,
 .newsletter .newsletter-content {
   display: flex;
   flex-wrap: wrap;
@@ -264,8 +286,8 @@ section .title::after {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  margin-top: 0;
+  width: 80%;
+  margin-top: -20px;
 }
 
 .images-container img:nth-of-type(1) {
@@ -287,11 +309,11 @@ section .title::after {
 .pres-images {
   display: flex;
   justify-content: center;
+  margin-left: 10vh;
   align-items: center;
   position: relative;
-  height: 100vh;
-  width: 90%;
-  margin-bottom: 20px;
+  height: 80vh;
+  width: 80%;
 }
 @media screen and (max-width: 768px) {
   .pres-images {
@@ -308,20 +330,20 @@ section .title::after {
   align-items: center;
   width: 70%;
   height: 100%;
-  margin-top: 10%;
 }
 .images-container img {
-  width: 30%;
+  width: 25%;
   margin-right: 10px;
   cursor: pointer;
-  filter: blur(5px);
+  filter: blur(0px);
 }
 .images-container img:hover {
   border: 10px white solid;
   outline: 5px #95C777 solid;
   border-radius: 100%;
   transform: scale(1.1);
-  filter: blur(0px);
+  transition: ease-in;
+  filter: blur(2px);
 }
 
 .bordure {
@@ -375,7 +397,6 @@ section .title::after {
   font-family: "Tahoma";
   -moz-user-select: none;
   -webkit-user-select: none;
-  -ms-user-select: none;
   user-select: none;
 }
 #caroussel-jeux #scene {
@@ -757,6 +778,4 @@ footer .footer-container {
   margin-left: auto;
   display: flex;
   flex-direction: row;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
