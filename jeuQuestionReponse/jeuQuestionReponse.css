@@ -7,6 +7,10 @@
     font-weight: 500;
 }
 
+body{
+    background-color: #bef19e;
+}
+
 section{
     display: flex;
     flex-direction: column;
@@ -15,6 +19,7 @@ section{
     height: 55vh;
     background-color: #7BB955;
     margin-top: 25vh;
+    border-radius: 2px;
 }
 
 h2{
