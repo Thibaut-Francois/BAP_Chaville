@@ -28,7 +28,7 @@ switch(step){
         p2 = e.target;
         step = 3;
     }
-    timer = setTimeout(check, 1500);
+    timer = setTimeout(check, 800);
     break;
     case 3:
     clearTimeout(timer);

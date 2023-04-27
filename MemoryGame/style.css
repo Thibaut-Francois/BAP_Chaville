@@ -6,22 +6,27 @@
 }
 h1{
     text-align: center;
+    color: #449556;
+    margin-top: 70px;
+    margin-bottom: 70px;
 }
 #game-board {
     margin-top: 20px;
     background-color: white;
     width: 750px;
-    height: 600px;
     margin: 0 auto;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 160px);
     grid-gap: 20px;
-    border: solid;
+    border: solid #449556;
+    border-radius: 3%;
     align-items: center;
 }
 img{
     width: 100%;
+    border: solid #449556;
+    border-radius: 10px;
 }
 span {
     height: 100%;
@@ -38,20 +43,26 @@ span {
     background-color: rgba(0,0,0,0.4);
 }
 
+p{
+    color: #449556;
+}
+
 .modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
-    border: 1px solid #888;
+    border: 2px solid #449556;
+    border-radius: 10px;
     width: 80%;
     max-width: 600px;
 }
 
 .close {
-    color: #aaa;
+    color: #449556;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    padding: 5px;
 }
 
 .close:hover,
