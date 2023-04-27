@@ -7,6 +7,9 @@ main {
     position: relative;
     overflow: hidden;
     height: 30rem; /* hauteur de la div diapo */
+    width: 35%;
+    background-color: #95C777;
+    border-radius: 15px;
   }
   
   .elements {
@@ -23,10 +26,11 @@ main {
     position: relative;
     margin: 0 5%;
     height: 100%; /* hauteur des éléments */
+    background-color: #95C777;
   }
   
   .element > img {
-    max-height: 100%; /* taille maximale des images */
+    max-height: 90%; /* taille maximale des images */
     object-fit: contain; /* ajuster la taille de l'image pour qu'elle tienne dans la div diapo tout en conservant le ratio d'aspect */
     position: relative;
     left: 0;

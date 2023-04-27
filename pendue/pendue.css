@@ -4,7 +4,7 @@ body {
   }
   
   h1 {
-    color: #3868D9;
+    color: #41b059;
     font-size: 3rem;
     margin: 1rem;
     text-align: center;
@@ -18,8 +18,11 @@ body {
   }
 
   .general{
-    margin: 5rem 30rem 0rem 30rem;
+    margin: 5rem auto 0;
+    max-width: 800px;
+    width: 90%;
   }
+  
   
   #mot-a-completer {
     font-size: 2rem;
@@ -36,7 +39,7 @@ body {
   }
   
   #lettres button {
-    background-color: #64DBF3;
+    background-color: #52b266;
     border: none;
     border-radius: 5px;
     color: #FFF;
@@ -47,7 +50,7 @@ body {
   }
   
   #envoyer {
-    background-color: #EA0C0C;
+    background-color: #387B47;
     border: none;
     border-radius: 5px;
     color: #FFF;
@@ -68,7 +71,7 @@ body {
   }
   
   #en-savoir-plus, #nouvelle-partie {
-    background-color: #3868D9;
+    background-color:   #5c8966;
     border: none;
     border-radius: 5px;
     color: #FFF;
