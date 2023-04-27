@@ -342,7 +342,7 @@ section .title::after {
   outline: 5px #95C777 solid;
   border-radius: 100%;
   transform: scale(1.1);
-  transition: ease-in;
+  transition: ease-in-out;
   filter: blur(2px);
 }
 
@@ -415,6 +415,14 @@ section .title::after {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   overflow: hidden;
 }
+@media screen and (max-width: 768px) {
+  #caroussel-jeux #scene {
+    width: 350px;
+    height: 70vh;
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
 #caroussel-jeux #scene #left-zone {
   background: #fff;
   height: 75%;
@@ -424,6 +432,12 @@ section .title::after {
   align-items: center;
   justify-content: left;
 }
+@media screen and (max-width: 768px) {
+  #caroussel-jeux #scene #left-zone {
+    flex-direction: row;
+    margin-top: 0;
+  }
+}
 #caroussel-jeux #scene #left-zone .list {
   display: flex;
   list-style: none;
@@ -432,6 +446,12 @@ section .title::after {
   flex-grow: 1;
   margin: 0;
   padding: 0;
+}
+@media screen and (max-width: 768px) {
+  #caroussel-jeux #scene #left-zone .list {
+    flex-direction: row;
+    margin-top: 0;
+  }
 }
 #caroussel-jeux #scene #left-zone .list li.item input[type=radio] {
   display: none;
@@ -778,4 +798,71 @@ footer .footer-container {
   margin-left: auto;
   display: flex;
   flex-direction: row;
+}
+
+/* responsive */
+@media (max-width: 947px) {
+  .menu-btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu-btn i.active:before {
+    content: "\f00d";
+  }
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    text-align: center;
+    padding-top: 80px;
+    transition: all 0.3s ease;
+  }
+  .navbar .menu.active {
+    left: 0;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .presentation .pre-container .text-2 {
+    font-size: 70px;
+  }
+  .presentation .pre-container .text-3 {
+    font-size: 35px;
+  }
+  .presentation .pre-container a {
+    font-size: 23px;
+    padding: 10px 30px;
+  }
+  .max-width {
+    max-width: 930px;
+  }
+  .contact .contact-content .column {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+}
+@media (max-width: 500px) {
+  .newsletter .max-width {
+    flex-direction: column;
+  }
+  .newsletter .right form .name,
+  .newsleter .right form .email {
+    margin: 0;
+  }
+  .scroll-up-btn {
+    right: 15px;
+    bottom: 15px;
+    height: 38px;
+    width: 35px;
+    font-size: 23px;
+    line-height: 38px;
+  }
 }/*# sourceMappingURL=style.css.map */
