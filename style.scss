@@ -137,8 +137,10 @@ body{
     justify-content: space-between;
 }
 .navbar .logo a img{
-    width: 40px;
-    height: auto;
+  position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: -2%;
   }
 .navbar .logo a span{
   font-size: 600;
@@ -764,21 +766,20 @@ $pictograms: (
             background-color: #ffffff;
           }
        }
-        
+       /*responsive*/
+      @media(max-width: 767px){
+        .footer-col{
+          width: 50%;
+          margin-bottom: 30px;
+        }
       }
-    }
-    /*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
-}
-}
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
-}
-}
+      @media(max-width: 574px){
+        .footer-col{
+          width: 50%;
+        }
+      }   
+    }   
+  }
 }
 
 /* responsive */

@@ -31,7 +31,6 @@ $(document).ready(function(){
       $('.menu-btn i').toggleClass("active");
   });
 });
-
 const images = document.querySelectorAll(".image");
 const descriptions = document.querySelectorAll(".description");
 
@@ -43,7 +42,6 @@ descriptions.forEach((description, index) => {
     description.classList.add("active-description");
   }
 });
-
 // Ajout d'un gestionnaire d'événements pour chaque image
 images.forEach((image, index) => {
   image.addEventListener("click", () => {

@@ -155,8 +155,10 @@ body button:hover a {
 }
 
 .navbar .logo a img {
-  width: 40px;
-  height: auto;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  margin-top: -2%;
 }
 
 .navbar .logo a span {
@@ -806,7 +808,6 @@ section .title::after {
 .footer {
   background-color: #387B47;
   padding: 70px 0;
-  /*responsive*/
 }
 .footer .container {
   max-width: 1170px;
@@ -815,6 +816,7 @@ section .title::after {
 .footer .container .row {
   display: flex;
   flex-wrap: wrap;
+  /*responsive*/
 }
 .footer .container .row .footer-col {
   width: 25%;
@@ -875,14 +877,14 @@ section .title::after {
   background-color: #ffffff;
 }
 @media (max-width: 767px) {
-  .footer .footer-col {
+  .footer .container .row .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
 }
 @media (max-width: 574px) {
-  .footer .footer-col {
-    width: 100%;
+  .footer .container .row .footer-col {
+    width: 50%;
   }
 }
 
